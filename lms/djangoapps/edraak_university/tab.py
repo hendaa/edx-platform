@@ -16,4 +16,10 @@ class UniversityIDTab(EnrolledTab):
 
     @classmethod
     def is_enabled(cls, course, user=None):
-        return course.enable_university_id
+        if not user:
+            return False
+
+        if not course.enable_university_id:
+            return False
+
+        return EnrolledTab.is_enabled(course, user)
