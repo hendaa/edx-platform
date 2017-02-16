@@ -39,7 +39,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ################################# LMS INTEGRATION #############################
 
-# Edraak: The values bellow overrides the settings of aws.py (and JSON files)
+# Edraak (devstack): Use domains instead of ports.
+# The values bellow overrides the settings of aws.py (and JSON files)
 # to hardcoded values that edX uses. Commenting out here we can use the correct
 # Edraak values.
 

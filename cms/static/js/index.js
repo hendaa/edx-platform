@@ -59,6 +59,7 @@ define(["domReady", "jquery", "underscore", "js/utils/cancel_on_escape", "js/vie
                 run: run
             };
 
+            // Edraak (studio): Disable "Create Course" double click.
             // Go into course creating state
             $('.new-course-save').addClass('is-disabled').attr('aria-disabled', true).addClass('is-processing').html(
                '<i class="icon fa fa-refresh fa-spin"></i> ' + gettext('Creating a new course')

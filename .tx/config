@@ -1,6 +1,7 @@
 [main]
 host = https://www.transifex.com
 
+# Edraak (i18n): Custom Transifex repo
 [edraak.django-partial]
 file_filter = conf/locale/<lang>/LC_MESSAGES/django-partial.po
 source_file = conf/locale/en/LC_MESSAGES/django-partial.po
@@ -55,6 +56,7 @@ source_file = conf/locale/en/LC_MESSAGES/wiki.po
 source_lang = en
 type = PO
 
+# Edraak (i18n): Include theme translations
 [edraak.edraak-platform-2015-theme]
 file_filter = conf/locale/<lang>/LC_MESSAGES/edraak-platform-2015-theme.po
 source_file = conf/locale/en/LC_MESSAGES/edraak-platform-2015-theme.po

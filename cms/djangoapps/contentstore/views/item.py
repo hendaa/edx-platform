@@ -834,6 +834,7 @@ def create_xblock_info(xblock, data=None, metadata=None, include_ancestor_info=F
 
     xblock_info = {
         "id": unicode(xblock.location),
+        # Edraak (cherry-picks): Mobile app required cherry-picks
         "display_name": xblock.display_name_with_default_escaped,
         "category": xblock.category,
         "edited_on": get_default_time_display(xblock.subtree_edited_on) if xblock.subtree_edited_on else None,

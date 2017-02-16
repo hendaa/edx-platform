@@ -185,6 +185,7 @@ def get_component_templates(courselike, library=False):
         }
 
     component_display_names = {
+        # Edraak (minor): Custom translation (Hiwar vs Manshour)
         'discussion': pgettext("component template", "Discussion"),
         'html': _("HTML"),
         'problem': _("Problem"),

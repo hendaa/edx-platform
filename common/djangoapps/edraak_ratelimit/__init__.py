@@ -1,4 +1,4 @@
 """
-Edraak's better rate limit backend.
+Edraak: (ratelimit): Custom rate limiting configuration.
 """
 

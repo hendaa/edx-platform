@@ -42,6 +42,9 @@ for log_name, log_level in LOG_OVERRIDES:
 
 
 def suppress_test_debug_log():
+    """
+    Edraak (devstack): Allow concise test failure messages
+    """
     if os.environ.get('SUPPRESS_TEST_DEBUG_LOG'):
         logging.disable(logging.INFO)
         print 'SUPPRESS_TEST_DEBUG_LOG is set, suppressing debug messages.'

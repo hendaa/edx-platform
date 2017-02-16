@@ -76,6 +76,7 @@ from openedx.core.lib.js_utils import (
     <%block name="jsextra"></%block>
     <script type="text/javascript">
       require(['common/js/common_libraries'], function () {
+          // Edraak (cherry-pick): Fix studio stuck on loading issue: https://github.com/edx/edx-platform/pull/11509
           // If you are rebasing take there's this bit was hacked to fix an issue that must fix by the rebase https://app.asana.com/0/15875049854186/230573008666419
           require(['js/factories/base'], function () {
               require(['js/factories/course'], function(CourseFactory) {

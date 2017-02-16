@@ -691,6 +691,7 @@ def _create_or_rerun_course(request):
         # force the start date for reruns and allow us to override start via the client
         start = request.json.get('start', CourseFields.start.default)
         run = request.json.get('run')
+        # Edraak (video pipeline): Auto fill token
         video_upload_token = settings.VIDEO_UPLOAD_PIPELINE.get('COURSE_VIDEO_UPLOAD_TOKEN')
 
         # allow/disable unicode characters in course_id according to settings

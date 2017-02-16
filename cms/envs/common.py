@@ -45,7 +45,7 @@ from lms.envs.common import (
     # Django REST framework configuration
     REST_FRAMEWORK,
 
-    # Unicode usernames
+    # Edraak (i18n): Unicode usernames
     USERNAME_PATTERN, USERNAME_REGEX
 )
 from path import Path as path
