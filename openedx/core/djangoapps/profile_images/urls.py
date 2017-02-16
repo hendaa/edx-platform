@@ -16,6 +16,7 @@ from django.conf import settings
 urlpatterns = patterns(
     '',
     url(
+        # Edraak (i18n, mobile)
         r'^v1/{}/upload$'.format(settings.USERNAME_PATTERN),
         ProfileImageUploadView.as_view(),
         name="profile_image_upload"
