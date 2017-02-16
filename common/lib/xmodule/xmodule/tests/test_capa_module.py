@@ -976,7 +976,7 @@ class CapaModuleTest(unittest.TestCase):
         self.assertTrue('success' in result and result['success'])
 
     def test_check_button_name(self):
-
+        # Edraak (cherry-pick): Change Final Check to Check
         # Change tests temporarily until we rebase with edx
         attempts = random.randint(1, 10)
         module = CapaFactory.create(attempts=attempts - 1, max_attempts=attempts)

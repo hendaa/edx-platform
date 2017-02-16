@@ -325,6 +325,7 @@ class CourseOverview(TimeStampedModel):
         """
         return course_metadata_utils.display_name_with_default(self)
 
+    # Edraak (cherry-pick, mobile)
     @property
     def display_name_with_default_escaped(self):
         """

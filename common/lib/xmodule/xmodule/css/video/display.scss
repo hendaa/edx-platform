@@ -196,6 +196,7 @@ html:not('.afontgarde') .icon-fallback-img {
     background-color: black;
     position: relative;
 
+    // Edraak (cherry-pick, unkown)
     .video-player-pre,
     .video-player-post {
        height: 50px;
@@ -839,6 +840,7 @@ html:not('.afontgarde') .icon-fallback-img {
           position: absolute;
           width: auto;
           height: auto;
+          // Edraak (rtl)
           @include left(0);
         }
       }

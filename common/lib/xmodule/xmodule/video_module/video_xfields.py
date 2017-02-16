@@ -173,6 +173,7 @@ class VideoFields(object):
         scope=Scope.settings,
         default="",
     )
+    # Edraak (sign-language): Although deprecated, we kept the course property for backward compatibility
     non_sign_language_video_id = String(
         help=_("The default assumption is all the videos have sign-language enabled. "
                "This option allows the course authors to provide alternative video without sign-language subtitling."),
