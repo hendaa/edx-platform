@@ -128,6 +128,8 @@ class TodaysDate(DateSummary):
     """
     css_class = 'todays-date'
     is_enabled = True
+
+    # Edraak (i18n): Timed exam translations
     date_format = u'%b %d, %Y (%H:%M {utc})'.format(utc=_('UTC'))
 
     # The date is shown in the title, no need to display it again.

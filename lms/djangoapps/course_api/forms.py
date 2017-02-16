@@ -10,7 +10,7 @@ from opaque_keys import InvalidKeyError
 from opaque_keys.edx.keys import CourseKey
 from openedx.core.djangoapps.util.forms import ExtendedNullBooleanField
 
-
+# Edraak (cherry-pick, mobile)
 class UsernameValidatorMixin(object):
     """
     Mixin class for validating the username parameter.

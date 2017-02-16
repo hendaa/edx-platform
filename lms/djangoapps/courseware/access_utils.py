@@ -63,6 +63,8 @@ def check_start_date(user, days_early_for_beta, start, course_key):
         return ACCESS_GRANTED
     else:
         now = datetime.now(UTC())
+
+        # Edraak (cherry-pick)
         if start is None or in_preview_mode():
             return ACCESS_GRANTED
 

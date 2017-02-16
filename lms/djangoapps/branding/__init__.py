@@ -16,7 +16,7 @@ from microsite_configuration import microsite
 from django.contrib.staticfiles.storage import staticfiles_storage
 from openedx.core.djangoapps.content.course_overviews.models import CourseOverview
 
-
+# Edraak (cherry-pick mobile): Add filters support on course catalogue API
 def get_visible_courses(org=None, filter_=None):
     """
     Return the set of CourseOverviews that should be visible in this branded

@@ -372,7 +372,7 @@ def get_course_syllabus_section(course, section_key):
 
     raise KeyError("Invalid about key " + str(section_key))
 
-
+# Edraak (cherry-pick, mobile)
 def get_courses(user, org=None, filter_=None):
     """
     Returns a list of courses available, sorted by course.number and optionally

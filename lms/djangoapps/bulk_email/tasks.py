@@ -399,8 +399,10 @@ def _get_source_address(course_id, course_title):
     # For the email address, get the course.  Then make sure that it can be used
     # in an email address, by substituting a '_' anywhere a non-(ascii, period, or dash)
     # character appears.
+
     course_name = re.sub(r"[^\w.-]", '_', course_id.course)
 
+    # Edraak (i18n)
     with override_language(settings.LANGUAGE_CODE):
         from_addr_format = u'{name} {email}'.format(
             # Translators: Bulk email from address e.g. ("Physics 101" Course Staff)

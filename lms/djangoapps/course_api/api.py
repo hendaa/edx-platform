@@ -43,6 +43,8 @@ def course_detail(request, username, course_key):
 
     Return value:
         `CourseOverview` object representing the requested course
+
+    Edraak (cherry pick): Support filters in catalogue API
     """
     user = get_effective_user(request.user, username)
     return get_course_overview_with_access(
