@@ -15,6 +15,7 @@ EMAIL_MIN_LENGTH = 3
 EMAIL_MAX_LENGTH = 254
 
 # The minimum and maximum length for the password account field
+# Edraak (auth): Increase the length of minimum password length
 PASSWORD_MIN_LENGTH = 6
 PASSWORD_MAX_LENGTH = 75
 

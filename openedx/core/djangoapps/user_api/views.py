@@ -77,6 +77,7 @@ class LoginSessionView(APIView):
             platform_name=settings.PLATFORM_NAME
         )
 
+        # Edraak (i18n): Provide more localized and helpful messages for signup fields.
         error_msg = _(u"Please enter your Email.")
         form_desc.add_field(
             "email",
@@ -165,6 +166,7 @@ class LoginSessionView(APIView):
 class RegistrationView(APIView):
     """HTTP end-points for creating a new user. """
 
+    # Edraak (auth):
     DEFAULT_FIELDS = ["email", "name", "username", "password", "is_third_party_auth"]
 
     EXTRA_FIELDS = [
@@ -362,6 +364,10 @@ class RegistrationView(APIView):
         Add the hidden third party auth indicator.
 
         This field is used to detect timed-out social login attempts.
+
+        Edraak (auth): Handle social login timeouts.
+                       e.g. login using Facebook but wait more than
+                       10 minute to complete the registration form.
 
         Arguments:
             form_desc: A form description
@@ -677,6 +683,7 @@ class RegistrationView(APIView):
             # in order to register a new account.
             terms_text = _(u"Terms of Service and Honor Code")
 
+        # Edraak (auth): Opening Signup Terms of Service in a new tab.
         terms_link = u"<a href=\"{url}\" target=\"_blank\">{terms_text}</a>".format(
             url=marketing_link("HONOR"),
             terms_text=terms_text

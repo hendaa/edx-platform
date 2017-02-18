@@ -10,6 +10,8 @@ from .preferences.views import PreferencesView, PreferencesDetailView
 from django.conf import settings
 from django.conf.urls import patterns, url
 
+# Edraak (i18n): Support unicode usernames in user_api.
+
 urlpatterns = patterns(
     '',
     url(

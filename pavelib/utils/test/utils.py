@@ -39,6 +39,8 @@ def clean_dir(directory):
 def suppress_test_debug_log(options):
     """
     Disable debug messages if the verbosity is 0.
+
+    Edraak (devstack): Allow concise debug log on test failures.
     """
 
     verbosity = getattr(options, 'verbosity', 1)

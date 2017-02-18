@@ -176,6 +176,8 @@ class AccountLegacyProfileSerializer(serializers.HyperlinkedModelSerializer, Rea
 
     def validate_name(self, new_name):
         """ Enforce minimum length for name. """
+
+        # Edraak (i18n): Allow translating account settings messages for name and language proficiencies fields.
         if len(new_name) < NAME_MIN_LENGTH:
             raise serializers.ValidationError(
                 _("The name field must be at least {} characters long.").format(NAME_MIN_LENGTH)
@@ -191,6 +193,9 @@ class AccountLegacyProfileSerializer(serializers.HyperlinkedModelSerializer, Rea
         return value
 
     def validate(self, attrs):
+        """
+        Edraak (user-accounts): Validate required extra fields in the account settings
+        """
         extra_fields = settings.REGISTRATION_EXTRA_FIELDS
         validation_errors = {}
 

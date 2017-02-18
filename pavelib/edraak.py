@@ -13,6 +13,8 @@ git_repo = Repo('.')
 def clean_repo_check():
     """
     Start with clean translation state.
+
+    Edraak (i18n): Prevent updating translations when there are uncommited git commits.
     """
     clean_git_repo_msg = (
         'The repo has local modifications. '

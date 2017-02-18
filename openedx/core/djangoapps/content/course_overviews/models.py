@@ -181,6 +181,7 @@ class CourseOverview(TimeStampedModel):
             short_description=CourseDetails.fetch_about_attribute(course.id, 'short_description'),
             effort=CourseDetails.fetch_about_attribute(course.id, 'effort'),
             course_video_url=CourseDetails.fetch_video_url(course.id),
+            # Edraak (cherry-pick, mobile): Added pacing fields to CourseOverview model.
             self_paced=course.self_paced,
         )
 
@@ -325,7 +326,7 @@ class CourseOverview(TimeStampedModel):
         """
         return course_metadata_utils.display_name_with_default(self)
 
-    # Edraak (cherry-pick, mobile)
+    # Edraak (cherry-pick, mobile): Added pacing field Course API
     @property
     def display_name_with_default_escaped(self):
         """
