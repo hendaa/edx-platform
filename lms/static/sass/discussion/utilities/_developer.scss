@@ -63,6 +63,7 @@ body.discussion {
     // alert controls
     .search-alert-controls {
       width: 28%;
+      // Edraak (ux)
       @include text-align(right);
 
       .control {

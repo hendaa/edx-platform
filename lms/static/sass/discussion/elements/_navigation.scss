@@ -180,7 +180,7 @@
     .forum-nav-thread-comments-count {
       background-color: $blue-d1;
       color: $white;
-
+      // Edraak (ux): Make the callout blue for updated posts (read, but with new comments)
       &:after {
         @include border-color(transparent, $blue-d1, transparent, transparent);
       }

@@ -24,6 +24,7 @@
 @import 'course/courseware/courseware';
 @import 'course/courseware/sidebar';
 @import 'course/courseware/amplifier';
+// Edraak (cherry-pick, mathjax)
 @import 'edraak/arabic-mathjax';   // Styles and hacks for the Arabic MathJax
 
 // course - modules
@@ -61,6 +62,7 @@
 @import "course/discussion/form-wmd-toolbar";
 @import "course/discussion/form";
 
+// Edraak (university)
 // Edraak university ID
 @import "course/edraak-university-id";
 

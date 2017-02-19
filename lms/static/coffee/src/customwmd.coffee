@@ -155,6 +155,7 @@ $ ->
               alert error
               if startUploadHandler
                 $('#file-upload').unbind('change').change(startUploadHandler)
+                # Edraak (fix): Hide upload dialogue after error
                 $('#new-link-image-cancel').click()  # Hide the box, to re-create it
               console.log error
             else

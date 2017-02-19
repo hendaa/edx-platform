@@ -8,6 +8,7 @@ from django.utils.translation import ungettext
 from django.core.urlresolvers import reverse
 from markupsafe import escape
 from course_modes.models import CourseMode
+# Edraak (courseware): fetch prerequisites from marketing
 from course_modes.helpers import enrollment_mode_display, get_mktg_for_course, COURSE_INFO_PAGE
 from student.helpers import (
   VERIFY_STATUS_NEED_TO_VERIFY,
@@ -63,6 +64,7 @@ from student.helpers import (
     <div class="wrapper-course-image" aria-hidden="true">
       % if show_courseware_link:
         % if not is_course_blocked:
+            ## Edraak (cherry-pick)
             <a href="${course_target}" data-course-key="${enrollment.course_id}" class="cover">
               <img src="${course_overview.image_urls['small']}" class="course-image" alt="${_('{course_number} {course_name} Home Page').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default_escaped) |h}" />
             </a>

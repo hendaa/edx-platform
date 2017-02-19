@@ -66,7 +66,7 @@
                                 helpMessage: gettext('When you click "Reset Password", a message will be sent to your email address. Click the link in the message to reset your password.')
                             })
                         },
-                        // Edraak: Removing this field because it's useless, according to QA
+                        // Edraak (account-settings): Removing this field because it's useless, according to QA
                         //{
                         //    view: new AccountSettingsFieldViews.LanguagePreferenceFieldView({
                         //        model: userPreferencesModel,

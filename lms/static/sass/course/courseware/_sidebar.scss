@@ -40,6 +40,7 @@
                     @extend %t-title6;
                     position: relative;
                     display: block;
+                    // Edraak (ux): fix group heading padding in courseware sidebar
                     padding: ($baseline*.75) 0;
                     @include padding-left($baseline*2);
                     @include padding-right($baseline);

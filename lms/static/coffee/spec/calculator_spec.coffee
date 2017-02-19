@@ -57,7 +57,7 @@ describe 'Calculator', ->
 
       @calculator.toggle(jQuery.Event("click"))
       expect($('.calc')).not.toHaveClass('closed')
-
+  # Edraak (calculator): fix multiple isses, https://github.com/Edraak/edx-platform/pull/153
   describe 'showHint', ->
     it 'show the help overlay', ->
       @calculator.showHint()

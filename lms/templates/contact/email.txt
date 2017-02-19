@@ -1,3 +1,4 @@
+## Edraak (templates): added logging to empty templates
 <%!
     import logging
     log = logging.getLogger(__name__)

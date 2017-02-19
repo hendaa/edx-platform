@@ -196,6 +196,7 @@
 
     .discussion-submit-comment {
       @include blue-button;
+      // Edraak (ux)
       @include float(left);
       margin-top: 8px;
     }

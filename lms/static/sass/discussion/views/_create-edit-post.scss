@@ -6,6 +6,7 @@
 .edit-post-form {
   @include clearfix();
   box-sizing: border-box;
+  // Edraak (ux)
   margin: 0 auto;
   border-radius: 3px;
   padding: ($baseline);

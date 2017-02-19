@@ -123,6 +123,7 @@
 @mixin forum-post-label($color) {
   @extend %t-weight4;
   @include font-size(9);
+  // Edraak (ux): Add some space for the community TA label in the forum
   line-height: 19px;  // Set the height of the box, and make the text centered vertically
   display: inline-block;  // Add some space between labels
   margin-top: ($baseline/4);

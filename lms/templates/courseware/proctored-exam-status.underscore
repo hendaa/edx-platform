@@ -7,6 +7,7 @@
         }
     %>
     <div class='exam-text'>
+    ## Edraak (i18n): translate proctored exam status
         <%= interpolate_text(gettext('You are taking "{exam_link}" as a {exam_type} exam. The timer on the right shows the time remaining in the exam.'), {exam_link: "<a href='" + exam_url_path + "'>"+gtLtEscape(exam_display_name)+"</a>", exam_type: (!_.isUndefined(arguments[0].exam_type)) ? (exam_type === 'timed' ? gettext('timed') : exam_type): gettext('timed')}) %>
     </div>
     <div id="turn_in_exam_id" class="pull-right turn_in_exam">

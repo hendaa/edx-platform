@@ -77,6 +77,7 @@
             },
 
             successMessage: function () {
+                // Edraak (fix): Fix gettext string
                 return this.indicators.success + interpolate_text(
                     gettext('We\'ve sent a message to {email_address}. Click the link in the message to reset your password.'),
                     {'email_address': this.model.get(this.options.emailAttribute)}

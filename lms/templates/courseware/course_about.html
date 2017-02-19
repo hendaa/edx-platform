@@ -173,6 +173,7 @@ from openedx.core.lib.courses import course_image_url
       % if get_course_about_section(request, course, "video"):
       <a href="#video-modal" class="media" rel="leanModal">
         <div class="hero">
+## Edraak (cherry-pick)
           <img src="${course_image_urls['large']}" alt="" />
           <div class="play-intro"></div>
         </div>
@@ -220,6 +221,7 @@ from openedx.core.lib.courses import course_image_url
             ##       or something allowing themes to do whatever they
             ##       want here (and on this whole page, really).
             % if self.stanford_theme_enabled():
+            ## Edraak (cherry-pick)
               <a href="http://twitter.com/intent/tweet?text=I+just+enrolled+in+${course.number}+${course.display_name_with_default_escaped}!+(http://class.stanford.edu)" class="share">
                 <i class="icon fa fa-twitter"></i><span class="sr">${_("Tweet that you've enrolled in this course")}</span>
               </a>

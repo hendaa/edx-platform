@@ -10,6 +10,7 @@ var edx = edx || {};
         // These should be the same length limits enforced by the server
         EMAIL_MIN_LENGTH: 3,
         EMAIL_MAX_LENGTH: 254,
+        // Edraak (student-account): Change password minimum length from 2 to 6
         PASSWORD_MIN_LENGTH: 6,
         PASSWORD_MAX_LENGTH: 75,
 
@@ -125,6 +126,7 @@ var edx = edx || {};
             .done(function() {
                 self.$passwordResetStatus
                     .addClass('success')
+                    // Edraak (ux): to clarify checking email for account validation
                     .text(
                         gettext("Password reset email sent. Follow the link in the email to change your password.") + " " +
                         gettext("If you're unable to find the password reset email, please check your email account's \"Spam\" or \"Junk\" folders to ensure the message was not filtered.")

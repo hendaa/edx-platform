@@ -158,6 +158,7 @@ ${fragment.foot_html()}
            entrance_exam_current_score is not UNDEFINED:
             % if not entrance_exam_passed:
             <p class="sequential-status-message">
+                ## Edraak (i18n): translate entrance exam
                 ${_('To access course materials, you must score {required_score}{percent} or higher on this \
                 exam. Your current score is {current_score}{percent}.').format(
                     required_score=int(round(course.entrance_exam_minimum_score_pct * 100)),

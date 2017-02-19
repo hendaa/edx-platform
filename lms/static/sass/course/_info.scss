@@ -33,6 +33,7 @@ div.info-wrapper {
         h2 {
           font-size: $body-font-size;
           font-weight: bold;
+          // Edraak (RTL): course calendar
           @include padding-left($baseline);
           background: url('#{$static-path}/images/calendar-icon.png') no-repeat;
 
