@@ -38,7 +38,7 @@ def create_course_image_thumbnail(course, dimensions):
 
     - dimensions is a tuple of (width, height)
 
-    Edraak (mobile, cherry-pick): Huge modifications on CourseOverview model to support mobile apps.
+    Edraak (mobile): Huge modifications on CourseOverview model to support mobile apps (cherry-pick)
     """
     course_image_asset_key = StaticContent.compute_location(course.id, course.course_image)
     course_image = AssetManager.find(course_image_asset_key)  # a StaticContent obj

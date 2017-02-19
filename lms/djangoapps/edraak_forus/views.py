@@ -95,6 +95,7 @@ class AuthView(View):
                     login(request, user)
                 else:
                     # Redirect the non-forus users to the login page
+                    # Edraak (forus): Protect Edraak users from ForUs breaches
                     return redirect('{login_url}?{params}'.format(
                             login_url=reverse('signin_user'),
                             params=urlencode({

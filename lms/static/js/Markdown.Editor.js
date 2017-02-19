@@ -25,7 +25,7 @@
     // this area.
     // -------------------------------------------------------------------
 
-    // Edraak (cherry-pick, courseware-discussion): Update discussion markdown editor add link and image modals
+    // Edraak (discussion): Update discussion markdown editor add link and image modals (cherry-pick)
     // The text that appears on the dialog box when entering links.
     var linkDialogText = gettext("Insert Hyperlink"),
         linkUrlHelpText = gettext("e.g. 'http://google.com/'"),

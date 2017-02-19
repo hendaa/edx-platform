@@ -913,7 +913,7 @@ def course_about(request, course_id):
             'disable_courseware_header': True,
             'can_add_course_to_cart': can_add_course_to_cart,
             'cart_link': reverse('shoppingcart.views.show_cart'),
-            # Edraak (cherry-pick, courseware): control course image size
+            # Edraak (courseware): Control course image size (cherry-pick)
             'pre_requisite_courses': pre_requisite_courses,
             'course_image_urls': overview.image_urls,
         })

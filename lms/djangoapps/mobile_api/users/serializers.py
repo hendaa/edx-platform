@@ -4,7 +4,7 @@ Serializer for user API
 from rest_framework import serializers
 from rest_framework.reverse import reverse
 
-# Edraak (mobile, marketing-api): Extract course description page from marketing api
+# Edraak (mobile): Extract course description page from marketing api
 from course_modes.helpers import COURSE_INFO_PAGE, get_mktg_for_course
 
 from courseware.access import has_access

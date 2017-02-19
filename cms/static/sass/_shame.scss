@@ -144,7 +144,7 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler{
 
 // Tiny MCE editor
 // I made this hack that fixes the problem, because I couldn't fix it in a better way.
-// Edraak (hack, studio): to show the save button on small screens for the TinyMCE editor
+// Edraak (studio): to show the save button on small screens for the TinyMCE editor (Hack)
 // Author: Omar Al-Ithawi
 .mce-window {
   @media (max-height: 630px) {

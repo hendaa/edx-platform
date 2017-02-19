@@ -123,7 +123,7 @@ def hack_remove_unwanted_modules(course, categories):
     :param categories:
     :return:
 
-    Edraak (hotfix, solar course): Remove english content from course solar energy 2
+    Edraak (solar-energy): Remove english content from course solar energy 2 (hotfix)
     """
 
     import re
