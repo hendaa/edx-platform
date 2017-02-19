@@ -62,6 +62,7 @@ class SelfPacedDateOverrideTest(ModuleStoreTestCase):
         __, sp_section = self.setup_course(display_name="Self-Paced Course", self_paced=True)
         self.assertEqual(self.due_date, sp_section.due)
 
+    # Edraak (cherry-pick, self-paced)
     @patch.dict('courseware.access.settings.FEATURES', {'DISABLE_START_DATES': False})
     def test_course_access_to_beta_users(self):
         """

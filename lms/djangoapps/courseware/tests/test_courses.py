@@ -84,6 +84,7 @@ class CoursesTest(ModuleStoreTestCase):
         with check_mongo_calls(num_mongo_calls):
             course_access_func(user, 'load', course.id)
 
+    # Edraak (cherry-pick, mobile)
     def test_get_courses_by_org(self):
         """
         Verify that org filtering performs as expected, and that an empty result

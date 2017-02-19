@@ -147,6 +147,8 @@ def courses(request):
             courses_list = sort_by_start_date(courses_list)
         else:
             courses_list = sort_by_announcement(courses_list)
+
+    # Edraak (courses): Hardcoded `AnonymousUser()` to hide unpublished courses always
     # Hardcoded `AnonymousUser()` to hide unpublished courses always
     courses = get_courses(AnonymousUser(), request.META.get('HTTP_HOST'))
     if microsite.get_value("ENABLE_COURSE_SORTING_BY_START_DATE",
@@ -395,6 +397,7 @@ def _index_bulk_op(request, course_key, chapter, section, position):
             user.id, unicode(course.id))
         return redirect(reverse('dashboard'))
 
+    # Edraak (university ID): Validate university ID before continuing to course.
     # If the user has to have a valid university ID before continuing to the course.
     if not staff_access and university_id_is_required(user, course):
         return redirect(reverse('edraak_university_id', args=[unicode(course.id)]))
@@ -683,6 +686,7 @@ def course_info(request, course_id):
         staff_access = has_access(request.user, 'staff', course)
         masquerade, user = setup_masquerade(request, course_key, staff_access, reset_masquerade_data=True)
 
+        # Edraak (university ID): Check university ID before continuing
         # If the user has to have a valid university ID before continuing to the course.
         if not staff_access and university_id_is_required(user, course):
             return redirect(reverse('edraak_university_id', args=[unicode(course.id)]))
@@ -909,6 +913,7 @@ def course_about(request, course_id):
             'disable_courseware_header': True,
             'can_add_course_to_cart': can_add_course_to_cart,
             'cart_link': reverse('shoppingcart.views.show_cart'),
+            # Edraak (cherry-pick, courseware): control course image size
             'pre_requisite_courses': pre_requisite_courses,
             'course_image_urls': overview.image_urls,
         })

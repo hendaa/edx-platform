@@ -598,6 +598,7 @@ class EntranceExamTestCases(LoginEnrollmentTestCase, ModuleStoreTestCase):
             self.field_data_cache
         )
 
+    # Edraak (entrance exam): Translated the Entrance Exam section subtitle
     @patch('courseware.grades.force_translate')
     @patch.dict('django.conf.settings.FEATURES', {'ENTRANCE_EXAMS': True, 'MILESTONES_APP': True})
     def test_translation_in_progress_page__force_translate(self, patched_force_translate):
