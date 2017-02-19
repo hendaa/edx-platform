@@ -196,7 +196,7 @@
 
     .discussion-submit-comment {
       @include blue-button;
-      // Edraak (ux)
+      // Edraak (rtl): Corrected the direction of forum reply button
       @include float(left);
       margin-top: 8px;
     }

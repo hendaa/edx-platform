@@ -327,7 +327,7 @@
     @include transition(all $tmg-f2 ease-in-out 0s);
     @extend %t-action1;
     display: inline-block;
-    // Edraak (rtl)
+    // Edraak (rtl): Fixed RTL icon margin in the studio (cherry-pick)
     @include margin-right($baseline/4);
     color: $gray-l3;
     vertical-align: middle;

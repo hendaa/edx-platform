@@ -21,7 +21,7 @@ def get_blocks(
 ):
     """
     Return a serialized representation of the course blocks.
-    Edraak (cherry-pick, mobile)
+    Edraak (cherry-pick, mobile): Course Blocks API: support for all blocks when no username
     Arguments:
         request (HTTPRequest): Used for calling django reverse.
         usage_key (UsageKey): Identifies the root block of interest.

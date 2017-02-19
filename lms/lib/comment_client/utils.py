@@ -82,7 +82,7 @@ def perform_request(method, url, data_or_params=None, raw=False,
             data=data,
             params=params,
             headers=headers,
-            # Edraak (hotfix)
+            # Edraak (hotfix): Increase the timeout to 20 to solve discussion server issue.
             timeout=20 # to solve issue https://app.asana.com/0/15875049854186/166307883409960
         )
 

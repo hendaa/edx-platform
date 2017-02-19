@@ -3,7 +3,7 @@ $sequence--border-color: #C8C8C8;
 // * +Icon - Font-Awesome  - Chevron Next
 // ====================
 // TODO: Move it to it's correct lib file
-// Edraak (rtl)
+// Edraak (rtl): Flipped the direction of the seq_module arrows
 @mixin fa-chevron-next {
   &:before {
     @if $bi-app-direction == ltr {

@@ -19,7 +19,7 @@ DEFAULT_TEMPLATE_ENGINE['OPTIONS']['debug'] = True
 # correct Edraak value.
 # This makes ORA2 run on the devstack.
 # SITE_NAME = 'localhost:8000'
-# Edraak (hotfix)
+# Edraak (devstack): Fixed an issue with preview courses URL and ORA urls in devstack, to support subdomain
 
 PLATFORM_NAME = ENV_TOKENS.get('PLATFORM_NAME', 'Devstack')
 # By default don't use a worker, execute tasks as if they were local functions

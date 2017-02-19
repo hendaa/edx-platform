@@ -64,7 +64,7 @@ def check_start_date(user, days_early_for_beta, start, course_key):
     else:
         now = datetime.now(UTC())
 
-        # Edraak (cherry-pick)
+        # Edraak (cherry-pick): Fix Beta Testers access courseware in self-paced courses ECOM-3612
         if start is None or in_preview_mode():
             return ACCESS_GRANTED
 

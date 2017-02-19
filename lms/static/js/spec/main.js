@@ -49,7 +49,7 @@
             'jasmine.async': 'xmodule_js/common_static/js/vendor/jasmine.async',
             'draggabilly': 'xmodule_js/common_static/js/vendor/draggabilly.pkgd',
             'domReady': 'xmodule_js/common_static/js/vendor/domReady',
-            // Edraak (cherry-pick, mathjax)
+            // Edraak (mathjax): Include the latest v2.6 MathJax to solve display issues.
             'mathjax': '//cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-MML-AM_HTMLorMML-full&delayStartupUntil=configured', // jshint ignore:line
             'youtube': '//www.youtube.com/player_api?noext',
             'coffee/src/ajax_prefix': 'xmodule_js/common_static/coffee/src/ajax_prefix',

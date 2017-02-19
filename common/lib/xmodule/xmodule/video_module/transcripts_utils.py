@@ -283,7 +283,7 @@ def copy_or_rename_transcript(new_name, old_name, item, delete_old=False, user=N
     If `old_name` is not found in storage, raises `NotFoundError`.
     If `delete_old` is True, removes `old_name` files from storage.
     """
-    # Edraak (i18n)
+    # Edraak (i18n): Allow uploading SRT files with Arabic names
     filename = u'subs_{0}.srt.sjson'.format(old_name)
     content_location = StaticContent.compute_location(item.location.course_key, filename)
     transcripts = contentstore().find(content_location).data

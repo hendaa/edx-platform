@@ -24,7 +24,7 @@
 @import 'course/courseware/courseware';
 @import 'course/courseware/sidebar';
 @import 'course/courseware/amplifier';
-// Edraak (cherry-pick, mathjax)
+// Edraak (mathjax): Support rendering Arabic equations with Amiri font
 @import 'edraak/arabic-mathjax';   // Styles and hacks for the Arabic MathJax
 
 // course - modules

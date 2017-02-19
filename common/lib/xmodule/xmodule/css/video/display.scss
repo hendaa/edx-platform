@@ -196,7 +196,7 @@ html:not('.afontgarde') .icon-fallback-img {
     background-color: black;
     position: relative;
 
-    // Edraak (cherry-pick, unkown)
+    // Edraak (video-player): LMS: new UI for video player + AFontGarde iconfonts (cherry-pick)
     .video-player-pre,
     .video-player-post {
        height: 50px;
@@ -840,7 +840,7 @@ html:not('.afontgarde') .icon-fallback-img {
           position: absolute;
           width: auto;
           height: auto;
-          // Edraak (rtl)
+          // Edraak (rtl): Fixing Video Player and subtitles misplacement
           @include left(0);
         }
       }

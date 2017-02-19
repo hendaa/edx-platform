@@ -34,8 +34,8 @@ body.discussion, .discussion-module {
     }
 
     .posted-details {
-      // Edraak (ux)
-      @extend %t-copy-sub2;  // Edraak: Corrected the font-size
+      // Edraak (ux): Fixed the font-size of .posted-details in content-specific discussions
+      @extend %t-copy-sub2;
       color: $gray-d1;
     }
   }

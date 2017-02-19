@@ -402,7 +402,7 @@ def _get_source_address(course_id, course_title):
 
     course_name = re.sub(r"[^\w.-]", '_', course_id.course)
 
-    # Edraak (i18n)
+    # Edraak (i18n): Translatable bulk_email from Address based on platform`s default language
     with override_language(settings.LANGUAGE_CODE):
         from_addr_format = u'{name} {email}'.format(
             # Translators: Bulk email from address e.g. ("Physics 101" Course Staff)

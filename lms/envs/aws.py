@@ -622,7 +622,7 @@ OPTIMIZELY_PROJECT_ID = AUTH_TOKENS.get('OPTIMIZELY_PROJECT_ID', OPTIMIZELY_PROJ
 #### Course Registration Code length ####
 REGISTRATION_CODE_LENGTH = ENV_TOKENS.get('REGISTRATION_CODE_LENGTH', 8)
 
-# Edraak (edraak-bayt)
+# Edraak (edraak-bayt): Integration with Bayt.com for publishing course completion certificates.
 # BAYT KEYS
 BAYT_SECRET_KEY = AUTH_TOKENS.get("BAYT_SECRET_KEY")
 BAYT_BASE = ENV_TOKENS.get("BAYT_BASE")

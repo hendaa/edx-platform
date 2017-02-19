@@ -63,7 +63,7 @@ body.discussion {
     // alert controls
     .search-alert-controls {
       width: 28%;
-      // Edraak (ux)
+      // Edraak (rtl): Fixing x button alignement in discussion.
       @include text-align(right);
 
       .control {
