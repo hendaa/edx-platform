@@ -41,6 +41,7 @@ for log_name, log_level in LOG_OVERRIDES:
     logging.getLogger(log_name).setLevel(log_level)
 
 
+# Edraak (config): suppress log messages on tests
 def suppress_test_debug_log():
     """
     Edraak (devstack): Allow concise test failure messages
@@ -520,6 +521,7 @@ MONGODB_LOG = {
     'db': 'xlog',
 }
 
+# Edraak (forus): Remove the word `error` from the ForUs message page.
 # ForUs variables
 FORUS_AUTH_SECRET_KEY = 'dummy_auth_secret_key'
 FORUS_BASE_URL = 'http://forus.jo'

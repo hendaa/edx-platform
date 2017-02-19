@@ -6,6 +6,7 @@ from django.conf import settings
 
 from .views import UserDetail, UserCourseEnrollmentsList, UserCourseStatus
 
+# Edraak (mobile): Enable arabic users in mobile API
 USERNAME_PATTERN = settings.USERNAME_PATTERN
 
 urlpatterns = patterns(

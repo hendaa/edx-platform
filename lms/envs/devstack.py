@@ -19,6 +19,7 @@ DEFAULT_TEMPLATE_ENGINE['OPTIONS']['debug'] = True
 # correct Edraak value.
 # This makes ORA2 run on the devstack.
 # SITE_NAME = 'localhost:8000'
+# Edraak (hotfix)
 
 PLATFORM_NAME = ENV_TOKENS.get('PLATFORM_NAME', 'Devstack')
 # By default don't use a worker, execute tasks as if they were local functions
@@ -27,6 +28,7 @@ HTTPS = 'off'
 
 ################################ LOGGERS ######################################
 
+# Edraak (edraak-config): Allow local logging instead of syslog to run docker
 LOGGING = get_logger_config(LOG_DIR,
                             logging_env=ENV_TOKENS['LOGGING_ENV'],
                             local_loglevel=local_loglevel,
@@ -165,6 +167,7 @@ FEATURES['LICENSING'] = True
 
 
 ########################## Courseware Search #######################
+# Edraak (search): disable courseware search
 # FEATURES['ENABLE_COURSEWARE_SEARCH'] = True
 # SEARCH_ENGINE = "search.elastic.ElasticSearchEngine"
 

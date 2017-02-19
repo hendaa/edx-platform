@@ -48,6 +48,8 @@ import pytz
 # The display name of the platform to be used in templates/emails/etc.
 PLATFORM_NAME = "Your Platform Name Here"
 CC_MERCHANT_NAME = PLATFORM_NAME
+
+# Edraak (copyright): Update copyright footer date dynamically
 # Shows up in the platform footer, eg "(c) COPYRIGHT_YEAR"
 COPYRIGHT_YEAR = datetime.datetime.now(pytz.UTC).year
 
@@ -542,6 +544,7 @@ DEFAULT_TEMPLATE_ENGINE = TEMPLATES[0]
 ###############################################################################################
 
 # use the ratelimit backend to prevent brute force attacks
+# Edraak (cherry-pick): Increase IP-based rate-limit. Add admin panel for both account-based and IP-based.
 AUTHENTICATION_BACKENDS = (
     'edraak_ratelimit.backends.EdraakRateLimitModelBackend',
 )
@@ -603,6 +606,7 @@ USAGE_ID_PATTERN = r'(?P<usage_id>(?:i4x://?[^/]+/[^/]+/[^/]+/[^@]+(?:@[^/]+)?)|
 
 
 # This pattern allow space in username
+# Edraak (i18n): Allow arabic usernames
 _USERNAME_REGEX_PART = '[\w .@_+-]+'
 USERNAME_REGEX = r'^{}$'.format(_USERNAME_REGEX_PART)
 USERNAME_PATTERN = r'(?P<username>{})'.format(_USERNAME_REGEX_PART)
@@ -1132,6 +1136,7 @@ MIDDLEWARE_CLASSES = (
 
     'splash.middleware.SplashMiddleware',
 
+    # Edraak (i18n): Make Arabic language default
     # Make Arabic language the default one
     'edraak_i18n.middleware.ForceLangMiddleware',
     'edraak_i18n.middleware.SessionBasedLocaleMiddleware',
@@ -2492,7 +2497,7 @@ COUNTRIES_OVERRIDE = {
     "EH": None,
 }
 
-
+# Edraak (l10n): Show arabic countries first
 # Show the Arabic countries first
 COUNTRIES_FIRST = [
     'DZ',

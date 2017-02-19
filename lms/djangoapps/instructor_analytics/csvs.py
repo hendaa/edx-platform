@@ -24,6 +24,7 @@ def create_csv_response(filename, header, datarows):
         quotechar='"',
         quoting=csv.QUOTE_ALL)
 
+    # Edraak (edraak-hotfix): Fixed unicode issue in certificate download
     csvwriter.writerow([s.encode('utf-8') for s in header])
 
     for datarow in datarows:

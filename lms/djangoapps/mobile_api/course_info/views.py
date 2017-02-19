@@ -73,6 +73,8 @@ class CourseHandoutsList(generics.ListAPIView):
         response along with the following value.
 
         * handouts_html: The HTML for course handouts.
+
+        Edraak(edraak-mobile, cherry-pick): return None for empty handouts
     """
 
     @mobile_course_access()

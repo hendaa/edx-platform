@@ -135,6 +135,7 @@ DEFAULT_COURSE_ABOUT_IMAGE_URL = ENV_TOKENS.get('DEFAULT_COURSE_ABOUT_IMAGE_URL'
 MEDIA_ROOT = ENV_TOKENS.get('MEDIA_ROOT', MEDIA_ROOT)
 MEDIA_URL = ENV_TOKENS.get('MEDIA_URL', MEDIA_URL)
 
+# Edraak (edraak-i18n): hardcode edraak platform name in Arabic
 # Hardcode to the Arabic name, even in English layout, check the previous commits to see other failed scripts
 PLATFORM_NAME = u'إدراك'
 
@@ -163,6 +164,7 @@ SESSION_SAVE_EVERY_REQUEST = ENV_TOKENS.get('SESSION_SAVE_EVERY_REQUEST', SESSIO
 
 REGISTRATION_EXTRA_FIELDS = ENV_TOKENS.get('REGISTRATION_EXTRA_FIELDS', REGISTRATION_EXTRA_FIELDS)
 
+# Edraak (edraak-config): allow configration to secure CSRF COOKIE to settings
 CSRF_COOKIE_SECURE = ENV_TOKENS.get('CSRF_COOKIE_SECURE', CSRF_COOKIE_SECURE)
 
 # Set the names of cookies shared with the marketing site
@@ -207,6 +209,7 @@ if 'loc_cache' not in CACHES:
 # Email overrides
 DEFAULT_FROM_EMAIL = ENV_TOKENS.get('DEFAULT_FROM_EMAIL', DEFAULT_FROM_EMAIL)
 DEFAULT_FEEDBACK_EMAIL = ENV_TOKENS.get('DEFAULT_FEEDBACK_EMAIL', DEFAULT_FEEDBACK_EMAIL)
+# Edraak (edraak-config): import admins as a tuple
 ADMINS = tuple([tuple(l) for l in ENV_TOKENS.get('ADMINS', ADMINS)])
 SERVER_EMAIL = ENV_TOKENS.get('SERVER_EMAIL', SERVER_EMAIL)
 TECH_SUPPORT_EMAIL = ENV_TOKENS.get('TECH_SUPPORT_EMAIL', TECH_SUPPORT_EMAIL)
@@ -619,15 +622,18 @@ OPTIMIZELY_PROJECT_ID = AUTH_TOKENS.get('OPTIMIZELY_PROJECT_ID', OPTIMIZELY_PROJ
 #### Course Registration Code length ####
 REGISTRATION_CODE_LENGTH = ENV_TOKENS.get('REGISTRATION_CODE_LENGTH', 8)
 
+# Edraak (edraak-bayt)
 # BAYT KEYS
 BAYT_SECRET_KEY = AUTH_TOKENS.get("BAYT_SECRET_KEY")
 BAYT_BASE = ENV_TOKENS.get("BAYT_BASE")
 BAYT_VALID_YEARS = ENV_TOKENS.get("BAYT_VALID_YEARS", 10)
 
+# Edraak (edraak-forus)
 # TODO: Add two keys, one for ForUs auth and the other one for Bayt
 FORUS_AUTH_SECRET_KEY = AUTH_TOKENS.get("FORUS_AUTH_SECRET_KEY")
 FORUS_BASE_URL = ENV_TOKENS.get("FORUS_BASE_URL")
 
+# Edraak (edraak-i18n): Allow edraak language change
 # Safe URL redirects for the LMS and marketing
 # A list of allowed hosts e.g. ['www.example.com', 'courses.example.com']
 SAFE_REDIRECT_HOSTS = ENV_TOKENS.get('SAFE_REDIRECT_HOSTS')
@@ -692,6 +698,7 @@ XBLOCK_SETTINGS = ENV_TOKENS.get('XBLOCK_SETTINGS', {})
 XBLOCK_SETTINGS.setdefault("VideoDescriptor", {})["licensing_enabled"] = FEATURES.get("LICENSING", False)
 XBLOCK_SETTINGS.setdefault("VideoModule", {})['YOUTUBE_API_KEY'] = AUTH_TOKENS.get('YOUTUBE_API_KEY', YOUTUBE_API_KEY)
 
+# Edraak (mathjax): Edraak MathJax configuration
 ##### Arabic MathJax configuration
 ARABIC_MATHJAX_VERSION = ENV_TOKENS.get('ARABIC_MATHJAX_VERSION')
 MATHJAX_CONTRIB_PREFIX = ENV_TOKENS.get('MATHJAX_CONTRIB_PREFIX')

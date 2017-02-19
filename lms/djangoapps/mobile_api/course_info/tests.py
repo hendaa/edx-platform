@@ -114,6 +114,7 @@ class TestHandouts(MobileAPITestCase, MobileAuthTestMixin, MobileCourseAccessTes
         with self.store.branch_setting(ModuleStoreEnum.Branch.draft_preferred, self.course.id):
             self.store.delete_item(handouts_usage_key, self.user.id)
 
+    # Edraak (edraak-mobile, cherry-pick)
         response = self.api_response(expected_response_code=200)
         self.assertIsNone(response.data['handouts_html'])
 

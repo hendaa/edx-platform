@@ -68,6 +68,7 @@ from student.models import CourseEnrollment, CourseAccessRole
 from lms.djangoapps.teams.models import CourseTeamMembership
 from lms.djangoapps.verify_student.models import SoftwareSecurePhotoVerification
 
+# Edraak (edraak-university): Export university ID information in grade reports
 from edraak_university.models import UniversityID
 from student.models import UserProfile
 
