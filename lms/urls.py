@@ -24,6 +24,7 @@ if settings.DEBUG or settings.FEATURES.get('ENABLE_DJANGO_ADMIN_SITE'):
 urlpatterns = (
     '',
 
+    # Edraak (hack): re-write arabic urls
     # Edraak.org SEO-friendly URL re-writes.
     # Keep it on top to let it get the requests first
     url(r'', include('edraak_url_rewrites.urls')),
@@ -75,6 +76,7 @@ urlpatterns = (
 
     url(r'^i18n/', include('django.conf.urls.i18n')),
 
+    # Edraak (urls): add urls to Edraak specific features
     url(r'', include('edraak_misc.urls')),
     url(r'^forus/', include('edraak_forus.urls')),
     url(r'', include('edraak_i18n.urls')),
@@ -642,7 +644,7 @@ urlpatterns += (
         include('student_account.urls')
     ),
 
-
+    # Edraak (hack): allow spaces in username
     # Student profile
     url(r'^u/{}$'.format(settings.USERNAME_PATTERN), 'student_profile.views.learner_profile', name='learner_profile'),
 

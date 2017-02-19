@@ -1,3 +1,4 @@
+## Edraak (fix): Fix contact-us page URL in the email change confirmation message
 <%! from django.core.urlresolvers import reverse %>
 <%! from django.utils.translation import ugettext as _ %>
 <%! from course_modes.helpers import get_mktg_url as marketing_url %>
