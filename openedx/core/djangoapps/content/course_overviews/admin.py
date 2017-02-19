@@ -36,7 +36,7 @@ class CourseOverviewAdmin(admin.ModelAdmin):
     search_fields = ['id', 'display_name']
 
 
-# Edraak (cherry-pick, mobile): Course overview modifications to support mobile app
+# Edraak (mobile): Course overview modifications to support mobile app (cherry-pick)
 class CourseOverviewImageConfigAdmin(ConfigurationModelAdmin):
     """
     Basic configuration for CourseOverview Image thumbnails.

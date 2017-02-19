@@ -84,7 +84,7 @@ class CoursesTest(ModuleStoreTestCase):
         with check_mongo_calls(num_mongo_calls):
             course_access_func(user, 'load', course.id)
 
-    # Edraak (cherry-pick, mobile): Update Course Catalog API to support filters
+    # Edraak (mobile): Update Course Catalog API to support filters (cherry-pick)
     def test_get_courses_by_org(self):
         """
         Verify that org filtering performs as expected, and that an empty result

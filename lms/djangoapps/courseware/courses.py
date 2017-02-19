@@ -377,7 +377,7 @@ def get_courses(user, org=None, filter_=None):
     Returns a list of courses available, sorted by course.number and optionally
     filtered by org code (case-insensitive).
 
-    Edraak (cherry-pick, mobile): Update Course Catalog API to support filters
+    Edraak (mobile): Update Course Catalog API to support filters (cherry-pick)
     """
     courses = branding.get_visible_courses(org=org, filter_=filter_)
 
