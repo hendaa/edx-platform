@@ -1,9 +1,11 @@
-## Edraak (forus)
 <div class="status submission-error hidden" aria-live="polite">
     <h4 class="message-title"><%- gettext("We couldn't create your account.") %></h4>
     <ul class="message-copy"></ul>
 </div>
 
+<%
+  // Edraak (forus): Mini-registration form for ForUs users for displaying the Terms of Use.
+%>
 <form id="register" class="register-form" autocomplete="off" tabindex="-1">
 
     <% if (context.errorMessage) { %>

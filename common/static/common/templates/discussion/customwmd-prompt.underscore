@@ -1,5 +1,5 @@
 <%
-    // Edraak (cherry-pick)
+    // Edraak (discussion): Update discussion markdown editor add link and image modals (cherry-pick)
 %>
 <h4 id="editor-dialog-title"><%- title %></h4>
 <div role="status" id="wmd-editor-dialog-form-errors" class="sr" tabindex="-1"></div>

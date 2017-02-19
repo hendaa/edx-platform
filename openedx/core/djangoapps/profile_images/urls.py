@@ -1,6 +1,8 @@
 """
 Defines the URL routes for this app.
 
+Edraak (i18n): Support Unicode usernames (with spaces) in profile images API.
+
 NOTE: These views are deprecated.  These routes are superseded by
 ``/api/user/v1/accounts/{username}/image``, found in
 ``openedx.core.djangoapps.user_api.urls``.
@@ -16,7 +18,6 @@ from django.conf import settings
 urlpatterns = patterns(
     '',
     url(
-        # Edraak (i18n, mobile)
         r'^v1/{}/upload$'.format(settings.USERNAME_PATTERN),
         ProfileImageUploadView.as_view(),
         name="profile_image_upload"
