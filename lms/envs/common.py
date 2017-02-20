@@ -188,6 +188,7 @@ FEATURES = {
     # Enable URL that shows information about the status of variuous services
     'ENABLE_SERVICE_STATUS': False,
 
+    # Edraak (ux): Custom Edraak theme.
     # Toggle to indicate use of the Stanford theming system
     'USE_CUSTOM_THEME': False,
 
@@ -284,6 +285,7 @@ FEATURES = {
     # if you enable this; we don't create tables by default.
     'ENABLE_THIRD_PARTY_AUTH': False,
 
+    # Edraak (ux): Custom Edraak merketing site.
     # Toggle to enable alternate urls for marketing links
     'ENABLE_MKTG_SITE': False,
 
